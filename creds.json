@@ -1,0 +1,7 @@
+{
+  "sqlite_invest": {
+    "dbdir": ".",
+    "database": "invest",
+    "scheme": "sqlite"
+  }
+}

@@ -1,0 +1,56 @@
+---
+title: "Final Project Proposal"
+author: "Suryansh Agrawal"
+date: "04/06/2022"
+output: pdf_document
+---
+
+## Project Programmer
+- [\textcolor{blue}{Suryansh Agrawal}](https://www.suryanshagrawal.com)
+
+## Web Pages from where the data will be extracted 
+I chose all the four different websites to extract all my data to have a better practice of webscrapping as it seems to be an interesting topic to me. 
+
+- **Cryptocurrency**
+    - [\textcolor{blue}{BTC Price}](https://coinmarketcap.com/currencies/bitcoin/historical-data/)
+    - [\textcolor{blue}{ETH Price}](https://finance.yahoo.com/quote/ETH-USD/history/)
+
+- **Stock**
+    - [\textcolor{blue}{MSFT Price}](https://www.investing.com/equities/microsoft-corp-historical-data)
+    - [\textcolor{blue}{FB Price}](https://www.barchart.com/stocks/quotes/FB/price-history/historical)
+
+## Investigation Questions
+- How have Bitcoin (BTC) and Ethereum (ETH) performed relative to each other in the past year?
+- How have Microsoft Corporation (MSFT) and Meta Platforms Inc (FB)'s stocks performed relative to each other in the past year?
+- Can we prdict the future prices of each stock/crypto? (tentative)
+
+## Rationale Explanation
+Since the start of 2019, I have been interested in finaces and specially intrigued with the concept of Crypto and decentralization. I started investing in 2020, and I wanted to set a comparison between my most invested cryptos and stocks respectively. The comparison will be done for the last year. I copied the HTML of all the 4 data sets and made a file for each by pasting the HTML. This was done so that I can practice Webscraping (xpath). 
+
+I will be dividing my project in the following functions (not final):
+
+- `btc_scrape`: The function that will be scraping [\textcolor{blue}{BTC File}](https://coinmarketcap.com/currencies/bitcoin/historical-data/)
+- `eth_scrape`: The function that will be scraping [\textcolor{blue}{ETH File}](https://finance.yahoo.com/quote/ETH-USD/history/)
+- `msft_scrape`: The function that will be scraping [\textcolor{blue}{MSFT File}](https://www.investing.com/equities/microsoft-corp-historical-data)
+- `fb_scrape`: The function that will be scraping [\textcolor{blue}{FB File}](https://www.barchart.com/stocks/quotes/FB/price-history/historical)
+- `sql_database`: The function that will create the SQL database
+- `btc_table`: The function that will help me store all the values extracted from the BTC dataset as a SQL table
+- `eth_table`: The function that will help me store all the values extracted from the ETH dataset as a SQL table
+- `msft_table`: The function that will help me store all the values extracted from the MSFT dataset as a SQL table
+- `fb_table`: The function that will help me store all the values extracted from the FB dataset as a SQL table
+- A few sql commands to process the data. I am not suere if I will be using functions for this, but the code cells containing the code will be big part of my project. 
+- `df_convert`: Comvert all the data sets to DataFrames
+- `btc_eth_volume_plot`: The volume comparision of cryptos with dates on a map
+- `msft_fb_volume_plot`: The volume comparision of stocks with dates on a map
+- `btc_eth_price_plot`: The price comparision of cryptos with dates on a map
+- `msft_fb_price_plot`: The price comparision of stocks with dates on a map
+
+---
+
+## A few observations
+1. Most of the function building will be first done by just looking at the datasets with the human eye and then coding the desired results. What I mean by saying this is that I will already visualize the output in my head and then use the functions in parts to get the result.
+2. The name of the functions can be changed.
+3. More functions can be added in the final project.
+4. Please let me know if I can clarify anything.
+
+---
